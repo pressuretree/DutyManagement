@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <!-- <mu-fade-transition> -->
+      <router-view/>
+    <!-- </mu-fade-transition> -->
   </div>
 </template>
 
@@ -27,5 +25,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#nav a.router-link-active {
+  color: #f5f5f5;
 }
 </style>
